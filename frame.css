@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(w.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    max-width: 90%;
+    width: 1000px; /* Use a fixed width for larger screens */
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(51, 94, 59, 0.9); /* Semi-transparent background */
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid cadetblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px;
+}
+
+.logo img {
+    width: 150px; /* Ensure smaller images on all screen sizes */
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    color: rgb(245, 238, 236);
+    flex: 1; /* Ensures it takes up available space */
+    text-align: center;
+}
+
+article {
+    margin-top: 20px;
+    color: #fff;
+}
+
+article h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+article p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 25px;
+}
+
+.fut-logo {
+    width: 150px;
+}
+
+.graduant-picture {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+        width: 100%; /* Take up full screen width on mobile */
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    article p {
+        font-size: 1rem;
+    }
+
+    .fut-logo, .logo img {
+        width: 100px; /* Smaller images on mobile */
+    }
+}
